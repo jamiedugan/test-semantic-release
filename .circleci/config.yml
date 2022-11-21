@@ -22,7 +22,10 @@ jobs:
   release:
     executor: node/default
     steps:
-      - checkout
+      - run:
+        name: test
+        command "echo Testing testing"
+      # - checkout
       # - node/install-packages
       # - run: npx semantic-release
 
