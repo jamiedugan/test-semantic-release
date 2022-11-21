@@ -33,5 +33,6 @@ workflows:
     jobs:
       - say-hello
       - release:
+          context: jamie-semver-context
           requires:
             - say-hello
