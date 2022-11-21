@@ -22,6 +22,7 @@ jobs:
   release:
     executor: node/default
     steps:
+      - checkout
       - node/install-packages
       - run: npx semantic-release
 
