@@ -23,11 +23,9 @@ jobs:
     executor: node/default
     steps:
       - run:
-          name: "test"
-          command: "echo Testing testing"
-      # - checkout
-      # - node/install-packages
-      # - run: npx semantic-release
+      - checkout
+      - node/install-packages
+      - run: npx semantic-release
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
