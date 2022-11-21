@@ -22,11 +22,14 @@ jobs:
   release:
     executor: node/default
     steps:
-    - checkout
+    - run:
+        name: "Run if on a release branch"
+        command: "echo This is only run if on a release branch."
     - when:
         condition:
           equal: [ main, << pipeline.git.branch >> ]
         steps:
+          - checkout
           - node/install-packages
           - run: npx semantic-release
 
