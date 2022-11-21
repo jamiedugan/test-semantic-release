@@ -23,7 +23,7 @@ jobs:
     executor: node/default
     steps:
       - checkout
-      - node/install-packages
+      # - node/install-packages
       # - run: npx semantic-release
 
 # Invoke jobs via workflows
