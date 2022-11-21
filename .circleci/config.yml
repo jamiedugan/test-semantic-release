@@ -20,6 +20,7 @@ jobs:
           name: "Say hello"
           command: "echo Hello, World!"
   release:
+    context: jamie-semver-context
     executor: node/default
     steps:
       - checkout
@@ -31,7 +32,6 @@ jobs:
 workflows:
   say-hello-workflow:
     jobs:
-      - context: jamie-semver-context
       - say-hello
       - release:
           requires:
