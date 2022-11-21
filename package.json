@@ -1,4 +1,6 @@
 {
+  "name": "@jamiedugan/test-semantic-release",
+  "description": "Testing automatic release",
   "devDependencies": {
     "semantic-release": "^19.0.5"
   },
@@ -6,6 +8,7 @@
     "branches": [
       "main"
     ],
+    "private": true,
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
