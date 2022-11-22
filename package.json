@@ -6,7 +6,11 @@
   },
   "release": {
     "branches": [
-      "main"
+      "main",
+      {
+        "name": "beta",
+        "prerelease": true
+      }
     ],
     "private": true,
     "plugins": [
