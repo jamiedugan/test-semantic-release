@@ -30,6 +30,7 @@ jobs:
           or:
             - equal: [ main, << pipeline.git.branch >> ]
             - equal: [ beta, << pipeline.git.branch >> ]
+            - equal: [ "1", "1"]
         steps:
           - checkout
           - node/install-packages
