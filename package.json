@@ -10,7 +10,7 @@
       {
         "name": "beta",
         "channel": "beta-release",
-        "prerelease": "chartkop-feature-beta"
+        "prerelease": true
       }
     ],
     "private": true,
