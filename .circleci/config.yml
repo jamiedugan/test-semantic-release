@@ -27,7 +27,10 @@ jobs:
         command: "echo This is only run if on a release branch."
     - when:
         condition:
-          equal: [ main, << pipeline.git.branch >> ]
+          or:
+            - equal: [ main, << pipeline.git.branch >> ]
+            - equal: [ beta, << pipeline.git.branch >> ]
+            - equal: [ "1", "1"]
         steps:
           - checkout
           - node/install-packages
