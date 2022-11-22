@@ -22,5 +22,4 @@
   },
   "tagFormat": "${version}",
   "repositoryUrl": "https://github.com/jamiedugan/test-semantic-release.git",
-  "dryRun": true
 }
