@@ -17,9 +17,9 @@
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/github"
-    ]
-  },
-  "tagFormat": "${version}",
-  "repositoryUrl": "https://github.com/jamiedugan/test-semantic-release.git",
-  "dryRun": true
+    ],
+    "tagFormat": "${version}",
+    "repositoryUrl": "https://github.com/jamiedugan/test-semantic-release.git",
+    "dryRun": true
+  }
 }
