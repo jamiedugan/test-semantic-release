@@ -9,6 +9,7 @@
       "main",
       {
         "name": "beta",
+        "channel": "beta-release",
         "prerelease": true
       }
     ],
